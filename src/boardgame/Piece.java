@@ -1,8 +1,8 @@
-package boradgame;
+package boardgame;
 
 public class Piece {
 
-    protected Position position;
+    protected boardgame.Position position;
     private Board board;
 
     public Piece(Board board) {
@@ -10,12 +10,11 @@ public class Piece {
         position = null;
     }
 
-
     protected Board getBoard() {
         return board;
     }
 
-
-
-
+    protected void setPosition(boardgame.Position position) {
+        this.position = position;
+    }
 }
